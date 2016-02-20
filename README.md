@@ -90,6 +90,18 @@ Open file server.js
 
 	mongoose.connect('mongodb://localhost:27017/time-waste');
 
-Setup Dataset >> tobe continue
+### Setup Dataset
 
-	
+Create new folder inside server folder named datasets
+
+Inside folder datasets create new file named user.js
+
+In user.js give this code:
+
+	var mongoose = require('mongoose');
+	module.export = mongoose.model('user', {
+		email: String,
+		password: String
+	});	
+
+### Setup Angular (tobe continue) 	
